@@ -316,7 +316,7 @@ export default function AIPortfolioCaseStudy() {
 
         <p className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-2">What I'd change</p>
         <BulletList items={[
-          'Environment parity from day one. The node_modules mismatch between local and CI/CD was avoidable. I'd enforce a clean install baseline earlier in the process.',
+          "Environment parity from day one. The node_modules mismatch between local and CI/CD was avoidable. I'd enforce a clean install baseline earlier in the process.",
           'Test on vertical monitors during development. The scroll spy threshold bug was entirely a testing coverage gap, not a logic error.',
           'Project content pipeline should have been planned earlier. The "Under Construction" banner on Featured Projects reflects a sequencing issue — the CMS and case study content should have been in-flight concurrently with the site build, not after.',
         ]} />
