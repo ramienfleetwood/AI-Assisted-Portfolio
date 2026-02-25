@@ -25,6 +25,7 @@ export async function getProjects() {
     technologies,
     githubUrl,
     liveUrl,
+    caseStudyUrl,
     featured,
     publishedAt
   }`
@@ -42,6 +43,7 @@ export async function getProjectBySlug(slug: string) {
     technologies,
     githubUrl,
     liveUrl,
+    caseStudyUrl,
     content,
     featured,
     publishedAt
@@ -60,6 +62,7 @@ export async function getFeaturedProjects() {
     technologies,
     githubUrl,
     liveUrl,
+    caseStudyUrl,
     publishedAt
   }`
 

@@ -52,6 +52,12 @@ export default defineType({
       type: 'url',
     }),
     defineField({
+      name: 'caseStudyUrl',
+      title: 'Case Study URL',
+      type: 'url',
+      description: 'Internal path (e.g. /case-studies/ai-portfolio) or external link to the case study for this project.',
+    }),
+    defineField({
       name: 'content',
       title: 'Content',
       type: 'array',
