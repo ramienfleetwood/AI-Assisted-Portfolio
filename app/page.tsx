@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/layout/Header'
 import { getFeaturedProjects, getProjects } from '@/lib/sanity'
+
+export const revalidate = 60 // re-fetch Sanity data at most every 60 seconds
 import ProjectCard from '@/components/ProjectCard'
 import AllProjectsModal from '@/components/AllProjectsModal'
 import { RevealOnScroll } from '@/components/RevealOnScroll'
