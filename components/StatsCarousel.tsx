@@ -6,7 +6,7 @@ const stats = [
   { value: '6+',   label: 'Years in healthcare tech' },
   { value: '3+',   label: 'Companies shipped at' },
   { value: 'CSPO', label: 'Scrum Product Owner' },
-  { value: 'AI',   label: 'Powered portfolio' },
+  { value: 'AI',   label: 'Integrated solutions' },
 ]
 
 const DISPLAY_MS  = 2800  // how long each stat is shown
