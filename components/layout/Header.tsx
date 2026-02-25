@@ -24,7 +24,10 @@ export default function Header() {
     }
 
     const handleScroll = () => {
-      const threshold = window.innerHeight * 0.35
+      // Use 65% of viewport height so sections activate when their top
+      // enters the lower third of the screen — works correctly on both
+      // short horizontal monitors and tall vertical ones.
+      const threshold = window.innerHeight * 0.65
       let current = ''
       for (const id of NAV_SECTIONS) {
         const el = document.getElementById(id)
