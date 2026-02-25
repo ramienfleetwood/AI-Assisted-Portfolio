@@ -36,19 +36,6 @@ export const experienceData: ExperienceEntry[] = [
   },
   {
     id: 2,
-    company: 'RSBuddy',
-    industry: 'Data & Product Analytics',
-    title: 'Data Analyst',
-    dateRange: '2018 – 2021',
-    duties: [
-      'Introduced to the power of data-driven decision-making — learned to surface the stories hidden in subscriber behavior and translate them into product insights that shaped the roadmap.',
-      'Built and maintained dashboards in Power BI, Tableau, and Excel tailored to stakeholders across technical and non-technical audiences, making key metrics accessible and actionable.',
-      'Leveraged SQL, R, VLOOKUP, and pivot table analysis to maintain relational database integrity and conduct both quantitative and qualitative deep-dives into user trends.',
-      'Developed a foundational discipline around evidence-based thinking that has since underpinned every product and operational role I\'ve held.',
-    ],
-  },
-  {
-    id: 3,
     company: 'Integrative Physical Medicine',
     industry: 'Healthcare Operations',
     title: 'Regional Clinical & Operations Manager',
@@ -58,6 +45,19 @@ export const experienceData: ExperienceEntry[] = [
       'Audited and quality-controlled Vericle EHR and Salesforce CRM documentation, building an eye for process integrity and the downstream consequences of poor data hygiene.',
       'Served as the primary escalation point for patient and staff issues, sharpening cross-functional communication and the ability to resolve high-pressure situations with empathy and clarity.',
       'Gained a ground-level understanding of how operational inefficiencies translate into real clinical risk — perspective that continues to inform how I approach product decisions.',
+    ],
+  },
+  {
+    id: 3,
+    company: 'RSBuddy',
+    industry: 'Data & Product Analytics',
+    title: 'Data Analyst · Part-time',
+    dateRange: '2018 – 2021',
+    duties: [
+      'Introduced to the power of data-driven decision-making — learned to surface the stories hidden in subscriber behavior and translate them into product insights that shaped the roadmap.',
+      'Built and maintained dashboards in Power BI, Tableau, and Excel tailored to stakeholders across technical and non-technical audiences, making key metrics accessible and actionable.',
+      'Leveraged SQL, R, VLOOKUP, and pivot table analysis to maintain relational database integrity and conduct both quantitative and qualitative deep-dives into user trends.',
+      'Developed a foundational discipline around evidence-based thinking that has since underpinned every product and operational role I\'ve held.',
     ],
   },
   {
