@@ -100,22 +100,56 @@ export default async function Home() {
               </p>
             </div>
 
-            {featuredProjects.length > 0 ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {featuredProjects.map((project: any, i: number) => (
-                  <RevealOnScroll key={project._id} delay={i * 80}>
-                    <ProjectCard project={project} />
-                  </RevealOnScroll>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-10 border border-dashed border-gray-200 dark:border-slate-700 rounded-xl">
-                <p className="text-gray-500 dark:text-slate-500 text-sm mb-3">No featured projects yet.</p>
-                <Link href="/studio" className="text-sm text-blue-700 dark:text-blue-400 hover:underline">
-                  Add projects in Studio →
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Hardcoded case study card */}
+              <RevealOnScroll>
+                <Link
+                  href="/case-studies/ai-portfolio"
+                  className="group flex flex-col border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden bg-white dark:bg-slate-800 hover:shadow-lg dark:hover:shadow-slate-900/50 hover:border-blue-200 dark:hover:border-blue-800 transition h-full"
+                >
+                  {/* Gradient header */}
+                  <div className="h-28 bg-gradient-to-br from-blue-600 to-blue-800 dark:from-blue-700 dark:to-blue-950 flex items-center justify-center">
+                    <span className="text-3xl font-black text-white/20 tracking-tight select-none">
+                      AI
+                    </span>
+                  </div>
+
+                  <div className="p-5 flex flex-col flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-[10px] font-semibold uppercase tracking-widest text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 px-2 py-0.5 rounded-full border border-blue-100 dark:border-blue-900">
+                        Case Study
+                      </span>
+                    </div>
+
+                    <h3 className="text-base font-bold text-gray-900 dark:text-slate-100 mb-1 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
+                      AI-Integrated Portfolio
+                    </h3>
+                    <p className="text-xs text-gray-500 dark:text-slate-500 leading-relaxed flex-1 mb-4">
+                      Scoping, building, and deploying a production portfolio with an AI chat assistant — decisions, trade-offs, and lessons.
+                    </p>
+
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {['Next.js', 'Claude API', 'Sanity', 'Tailwind', 'Vercel'].map((t) => (
+                        <span key={t} className="text-[10px] bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-400 border border-blue-100 dark:border-blue-900/60 px-2 py-0.5 rounded">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+
+                    <span className="text-xs font-medium text-blue-700 dark:text-blue-400 group-hover:underline">
+                      Read case study →
+                    </span>
+                  </div>
                 </Link>
-              </div>
-            )}
+              </RevealOnScroll>
+
+              {/* Sanity-sourced featured project cards */}
+              {featuredProjects.map((project: any, i: number) => (
+                <RevealOnScroll key={project._id} delay={(i + 1) * 80}>
+                  <ProjectCard project={project} />
+                </RevealOnScroll>
+              ))}
+            </div>
           </section>
         </RevealOnScroll>
 
